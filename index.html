@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clone</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- Desert List-->
+			<section class="desserts">
+				<h2>Desserts</h2>
+				<div class="dessert-list">
+					<!---Desert Item Example-->
+				</div>
+			</section>
+			<!-- Cart Section-->
+			<section class="cart">
+				<h2>Your Cart</h2>
+				<ul class="cart-items">
+					<img src="./assets/images/x-mark.png" />
+				</ul>
+				<div class="cart-total">
+					<p>Order Total: <span id="total">$0.00</span></p>
+					<h6>
+						<img
+							src="./assets/images/plant.png"
+							alt="Eco-friendly icon"
+							width="20"
+							height="20"
+						/>
+						This is a <strong>carbon-neutral</strong> delivery
+					</h6>
+				</div>
+				<button class="confirm-order">Confirm Order</button>
+			</section>
+		</div>
+
+		<!--Order confirmation Modal-->
+		<div id="order-confirmation" class="modal hidden">
+			<div class="modal-content">
+				<h2>Order Confirmed</h2>
+				<p>We hope you enjoy your food</p>
+				<ul class="order-summary"></ul>
+				<p class="order-total">Order Total: $<span id="order-total"></span></p>
+				<button class="start-new-order">Start-new-order</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
